@@ -1,4 +1,4 @@
-# Install script for directory: /home/chinyakov/CLionProjects/graph_lab_bin_create
+# Install script for directory: /home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/chinyakov/CLionProjects/graph_lab_bin_create/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

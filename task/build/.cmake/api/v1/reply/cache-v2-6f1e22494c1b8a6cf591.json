@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab1/build"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -283,10 +283,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab1/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab1"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab1/build"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task/build"
 		},
 		{
 			"name" : "graph_lab1_IS_TOP_LEVEL",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab1"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task"
 		}
 	],
 	"kind" : "cache",

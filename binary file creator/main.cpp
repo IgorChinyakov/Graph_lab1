@@ -14,15 +14,17 @@ void writeGraphToBinaryFile(const string &filename, const vector<vector<int>> &g
     }
 
     // Записываем размер матрицы
-    int16_t n = graph.size();
-    file.write(reinterpret_cast<const char*>(&n), sizeof(int16_t));
+    int32_t n = graph.size();
+    file.write(reinterpret_cast<const char*>(&n), sizeof(int32_t));
 
     // Записываем матрицу смежности
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
-            int16_t value = graph[i][j];
-            file.write(reinterpret_cast<const char*>(&value), sizeof(int16_t));
+            int32_t value = graph[i][j];
+            cout << value << ' ';
+            file.write(reinterpret_cast<const char*>(&value), sizeof(int32_t));
         }
+        cout << '\n';
     }
 
     file.close();

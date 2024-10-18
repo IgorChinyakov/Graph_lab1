@@ -15,15 +15,17 @@ vector<vector<int>> readGraph(const string &filename, int &n) {
         exit(1);
     }
 
-    file.read(reinterpret_cast<char*>(&n), sizeof(int16_t));
+    file.read(reinterpret_cast<char*>(&n), sizeof(int32_t));
     vector<vector<int>> graph(n, vector<int>(n));
 
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
-            int16_t value;
-            file.read(reinterpret_cast<char*>(&value), sizeof(int16_t));
-            graph[i][j] = (value == INT_MAX ? INT_MAX : value); // -1 означает отсутствие ребра
+            int32_t value;
+            file.read(reinterpret_cast<char*>(&value), sizeof(int32_t));
+            graph[i][j] = value; // 
+            cout << value << ' ';
         }
+        cout << '\n';
     }
 
     file.close();

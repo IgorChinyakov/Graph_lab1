@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/chinyakov/CLionProjects/graph_lab1/main.cpp" "CMakeFiles/graph_lab1.dir/main.cpp.o" "gcc" "CMakeFiles/graph_lab1.dir/main.cpp.o.d"
+  "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task/main.cpp" "CMakeFiles/graph_lab1.dir/main.cpp.o" "gcc" "CMakeFiles/graph_lab1.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

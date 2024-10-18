@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/chinyakov/CLionProjects/graph_lab1/build",
-		"source" : "/home/chinyakov/CLionProjects/graph_lab1"
+		"build" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task/build",
+		"source" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task"
 	},
 	"version" : 
 	{

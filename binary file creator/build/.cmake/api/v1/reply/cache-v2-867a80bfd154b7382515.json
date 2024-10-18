@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab_bin_create/build"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab_bin_create/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab_bin_create"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1158,42 +1158,6 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "graph_lab1_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab_bin_create/build"
-		},
-		{
-			"name" : "graph_lab1_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "graph_lab1_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab_bin_create"
-		},
-		{
 			"name" : "graph_lab_bin_create_BINARY_DIR",
 			"properties" : 
 			[
@@ -1203,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab_bin_create/build"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator/build"
 		},
 		{
 			"name" : "graph_lab_bin_create_IS_TOP_LEVEL",
@@ -1227,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chinyakov/CLionProjects/graph_lab_bin_create"
+			"value" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator"
 		}
 	],
 	"kind" : "cache",

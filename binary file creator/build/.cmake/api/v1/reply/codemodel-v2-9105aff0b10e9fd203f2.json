@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/chinyakov/CLionProjects/graph_lab_bin_create/build",
-		"source" : "/home/chinyakov/CLionProjects/graph_lab_bin_create"
+		"build" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator/build",
+		"source" : "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator"
 	},
 	"version" : 
 	{

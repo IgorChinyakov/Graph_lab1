@@ -1,3 +1,3 @@
-/home/chinyakov/CLionProjects/graph_lab_bin_create/build/CMakeFiles/graph_lab_bin_create.dir
-/home/chinyakov/CLionProjects/graph_lab_bin_create/build/CMakeFiles/edit_cache.dir
-/home/chinyakov/CLionProjects/graph_lab_bin_create/build/CMakeFiles/rebuild_cache.dir
+/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator/build/CMakeFiles/graph_lab_bin_create.dir
+/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator/build/CMakeFiles/edit_cache.dir
+/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/binary file creator/build/CMakeFiles/rebuild_cache.dir

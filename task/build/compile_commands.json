@@ -1,8 +1,8 @@
 [
 {
-  "directory": "/home/chinyakov/CLionProjects/graph_lab1/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/graph_lab1.dir/main.cpp.o -c /home/chinyakov/CLionProjects/graph_lab1/main.cpp",
-  "file": "/home/chinyakov/CLionProjects/graph_lab1/main.cpp",
+  "directory": "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/graph_lab1.dir/main.cpp.o -c /home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task/main.cpp",
+  "file": "/home/chinyakov/CLionProjects/graph_lab1/Graph_lab1/task/main.cpp",
   "output": "CMakeFiles/graph_lab1.dir/main.cpp.o"
 }
 ]
