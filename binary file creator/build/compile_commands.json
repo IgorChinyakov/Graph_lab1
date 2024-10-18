@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/chinyakov/CLionProjects/graph_lab_bin_create/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/graph_lab_bin_create.dir/main.cpp.o -c /home/chinyakov/CLionProjects/graph_lab_bin_create/main.cpp",
+  "file": "/home/chinyakov/CLionProjects/graph_lab_bin_create/main.cpp",
+  "output": "CMakeFiles/graph_lab_bin_create.dir/main.cpp.o"
+}
+]
