@@ -36,7 +36,7 @@ int main() {
         {0, 3, INT_MAX, 7},
         {3, 0, 4, 2},
         {INT_MAX, 4, 0, 5},
-        {7, -4, 5, 0}
+        {7, 4, 5, 0}
     };
 
     string filename = "graph.bin";

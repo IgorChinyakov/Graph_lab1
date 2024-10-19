@@ -15,17 +15,20 @@ vector<vector<int>> readGraph(const string &filename, int &n) {
         exit(1);
     }
 
-    file.read(reinterpret_cast<char*>(&n), sizeof(int32_t));
+    file.read(reinterpret_cast<char*>(&n), sizeof(int16_t));
     vector<vector<int>> graph(n, vector<int>(n));
 
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
-            int32_t value;
-            file.read(reinterpret_cast<char*>(&value), sizeof(int32_t));
-            graph[i][j] = value; // 
-            cout << value << ' ';
+            int16_t value;
+            file.read(reinterpret_cast<char*>(&value), sizeof(int16_t));
+            if(i != j && value == 0)
+                graph[i][j] = INT_MAX;
+            else
+                graph[i][j] = value; // 
+            // cout << value << ' ';
         }
-        cout << '\n';
+        // cout << '\n';
     }
 
     file.close();
@@ -52,6 +55,7 @@ bool bellmanFord(const vector<vector<int>> &graph, vector<int> &dist, int src) {
     for (int u = 0; u < n; ++u) {
         for (int v = 0; v < n; ++v) {
             if (graph[u][v] != INT_MAX && dist[u] != INT_MAX && dist[u] + graph[u][v] < dist[v]) {
+                cout << graph[u][v];
                 return true; // Обнаружен отрицательный цикл
             }
         }
@@ -119,16 +123,33 @@ void writeResult(const string &filename, bool hasNegativeCycle, const vector<int
         // Вычисление диаметра, радиуса, центральных и периферийных вершин
         int diameter = 0, radius = INT_MAX;
         vector<int> eccentricities(allPairsDist.size(), 0);
+        // cout << "размер: " << allPairsDist.size() << endl;
         vector<int> centralVertices, peripheralVertices;
 
         for (int u = 0; u < allPairsDist.size(); ++u) {
+            bool isConnected = false;
             for (int v = 0; v < allPairsDist.size(); ++v) {
-                if (allPairsDist[u][v] != INT_MAX) {
+                if (allPairsDist[u][v] != INT_MAX && allPairsDist[u][v] != 0) {
+                    isConnected = true;
+                    // cout << "Вершины: " << u << " - " << v << ' ' << allPairsDist[u][v] << endl;
                     eccentricities[u] = max(eccentricities[u], allPairsDist[u][v]);
                 }
             }
-            diameter = max(diameter, eccentricities[u]);
-            radius = min(radius, eccentricities[u]);
+
+            if (isConnected)
+            {
+                diameter = max(diameter, eccentricities[u]);
+                radius = min(radius, eccentricities[u]);
+            }
+            else
+            {
+                radius = INT_MAX;
+                diameter = INT_MAX;
+                centralVertices.push_back(u);
+                peripheralVertices.push_back(u);
+                break;
+            }
+            // cout << "Радиус: " << radius << endl;
         }
 
         for (int u = 0; u < allPairsDist.size(); ++u) {
