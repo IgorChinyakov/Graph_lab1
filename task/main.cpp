@@ -104,42 +104,6 @@ vector<int> dijkstra(int src, const vector<vector<int>> &graph, const vector<int
     }
 
     return dist;
-    // int n = graph.size();
-    // vector<int> dist(n, INT_MAX);   // расстояния от src до всех вершин
-    // vector<bool> visited(n, false); // отметка посещенных вершин
-
-    // dist[src] = 0; // начальная вершина
-
-    // for (int i = 0; i < n - 1; i++)
-    // {
-    //     // Найти вершину с минимальным расстоянием из непосещенных
-    //     int minDist = INT_MAX, minIndex = -1;
-
-    //     for (int v = 0; v < n; v++)
-    //     {
-    //         if (!visited[v] && dist[v] <= minDist)
-    //         {
-    //             minDist = dist[v];
-    //             minIndex = v;
-    //         }
-    //     }
-
-    //     int u = minIndex;
-    //     visited[u] = true;
-
-    //     // Обновить расстояния для смежных вершин
-    //     for (int v = 0; v < n; v++)
-    //     {
-    //         // Проверяем, что ребро существует (graph[u][v] != INT_MAX), вершина не посещена,
-    //         // и расстояние до v через u меньше, чем текущее значение dist[v]
-    //         if (!visited[v] && graph[u][v] != INT_MAX && dist[u] != INT_MAX && dist[u] + graph[u][v] < dist[v])
-    //         {
-    //             dist[v] = dist[u] + graph[u][v];
-    //         }
-    //     }
-    // }
-
-    // return dist;
 }
 
 // Алгоритм Джонсона
@@ -171,23 +135,6 @@ vector<vector<int>> johnson(const vector<vector<int>> &graph)
         exit(1);
     }
 
-    // for (int i = 0; i < n; i++)
-    // {
-    //     cout << h[i] << endl;
-    // }
-    
-    // // Пересчитываем веса рёбер
-    // for (int u = 0; u < n; ++u)
-    // {
-    //     for (int v = 0; v < n; ++v)
-    //     {
-    //         if (newGraph[u][v] != n)
-    //         {
-    //             newGraph[u][v] += h[u] - h[v];
-    //         }
-    //     }
-    // }
-
     // Применяем алгоритм Дейкстры для всех вершин
     for (int u = 0; u < n; ++u)
     {
@@ -202,15 +149,6 @@ vector<vector<int>> johnson(const vector<vector<int>> &graph)
             }
         }
 
-        // d[u] = 0;
-        // for (int i = 0; i < n; ++i) {
-        //     for (int v = 0; v < n; ++v) {
-        //         if (newGraph[u][v] != INT_MAX && d[u] + newGraph[u][v] < d[v]) {
-        //             d[v] = d[u] + newGraph[u][v];
-        //         }
-        //     }
-        // }
-        // dist[u] = d;
     }
 
     return dist;
@@ -253,12 +191,7 @@ void writeResult(const string &filename, bool hasNegativeCycle, const vector<int
             {
                 if (u != v)
                 {
-                    // cout << "Вершины: " << u << " - " << v << ' ' << allPairsDist[u][v] << endl;
                     max_eccentricity = max(max_eccentricity, allPairsDist[u][v]);
-                    // if (u == 0)
-                    // {
-                    //     cout << u << " - " << v << ':' << allPairsDist[u][v] << endl;
-                    // }
                 }
             }
 
@@ -282,13 +215,6 @@ void writeResult(const string &filename, bool hasNegativeCycle, const vector<int
                 peripheralVertices.push_back(u);
             }
         }
-
-        // outfile << "Эксцентиристеты: " << endl;
-        // for (int v : eccentricities)
-        // {
-        //     outfile << v << " ";
-        // }
-        // outfile << endl;
 
         outfile << "Диаметр: " << diameter << endl;
         outfile << "Радиус: " << radius << endl;
